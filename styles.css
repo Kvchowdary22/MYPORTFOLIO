@@ -1,0 +1,310 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+}
+
+h1 {
+    margin: 0;
+    animation: slideIn 1s ease-out;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from, 20%, 40%, 60%, 80%, to {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-30px);
+    }
+    40% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+}
+
+/* Add styles for timeline section */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for knowledge sharing section */
+.knowledge-sharing ul {
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for the summary section */
+.summary {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.summary h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.summary p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Add styles for the education section */
+.education {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.education h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.education p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Add styles for work experience and volunteer experience sections */
+.work-experience, .volunteer-experience {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.work-experience h2, .volunteer-experience h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.work-experience .experience, .volunteer-experience .experience {
+    margin-top: 10px;
+}
+
+.work-experience ul, .volunteer-experience ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.work-experience li, .volunteer-experience li {
+    margin-bottom: 5px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for professional skills and memberships sections */
+.professional-skills, .professional-memberships {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.professional-skills h2, .professional-memberships h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.professional-skills ul, .professional-memberships ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+}
+
+.professional-skills li, .professional-memberships li {
+    margin-bottom: 5px;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for awards and honors section */
+.awards-honors {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.awards-honors h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.awards-honors ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.awards-honors li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for language competencies section */
+.language-competencies {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.language-competencies h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.language-competencies ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.language-competencies li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+    animation: bounceIn 1s ease-in-out;
+}
+
+/* Add styles for timelines section */
+.timelines {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.timelines h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.timelines p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Add styles for knowledge sharing section */
+.knowledge-sharing {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.knowledge-sharing h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.knowledge-sharing p {
+    line-height: 1.6;
+    color: #555;
+}
